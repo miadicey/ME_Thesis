@@ -1,0 +1,38 @@
+#include <stdio.h> // Stdio defines printf command.
+#include <stdint.h> // Standard int will define the datatypes we are using e.g. int32
+#include <stdbool.h> // Standard bool contains nice boolean definitions
+
+typedef struct {
+    float lat;
+    float lon;
+    float alt;
+} Coord_t;
+
+bool isBelowSeaLevel(Coord_t coord)
+{
+    return coord.alt < 0;
+};
+
+uint64_t numBelowSeaLevel(const Coord_t coords[], size_t n)
+{
+    uint64_t count = 0;
+    for (size_t i = 0; i < n; i++) {
+        if (isBelowSeaLevel(coords[i])) {
+            count++;
+        }
+    }
+    return count;
+};
+
+
+ 
+int main(void) 
+{
+    Coord_t coords[5];
+    for (size_t i = 0; i < 5; i++) {
+        coords[i].lat = ((float)i - 2)*15;
+        coords[i].lon = ((float)i - 2)*-15;
+        coords[i].alt = ((float)i - 2)*100;
+    }
+    printf("%lu\n", numBelowSeaLevel(coords, 5));
+}

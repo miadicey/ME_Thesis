@@ -1,0 +1,21 @@
+#include <stdio.h> // Stdio defines printf command.
+#include <stdint.h> // Standard int will define the datatypes we are using e.g. int32
+#include <stdbool.h> // Standard bool contains nice boolean definitions
+
+bool isInData(const uint8_t* data, size_t arraySize, const uint8_t* ptr)
+{
+    return ((ptr < data+arraySize) && (ptr >= data));
+}
+
+int main(void)
+{
+    const uint8_t x = 13;
+    const uint8_t thing[3] = {1, 2, 3};
+    const uint8_t y = 12;
+    printf("%d\n", isInData(thing, 3, &x));
+    printf("%d\n", isInData(thing, 3, &thing[0]));
+    printf("%d\n", isInData(thing, 3, &thing[1]));
+    printf("%d\n", isInData(thing, 3, &thing[2]));
+    printf("%d\n", isInData(thing, 3, &thing[3]));
+    printf("%d\n", isInData(thing, 3, &y));
+}

@@ -1,0 +1,63 @@
+!SESSION 2025-05-26 14:05:09.245 -----------------------------------------------
+eclipse.buildId=Version 1.18.1
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_NZ
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-05-26 14:05:54.128
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-05-26 14:05:54.129
+!MESSAGE Log4j2 initialized with config file C:\Users\mdi51\ME_Thesis\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-05-26 14:05:56.469
+!MESSAGE Started RMI Server, listening on port 41338
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-05-26 14:06:30.825
+!MESSAGE Indexed 'master_node' (30 sources, 125 headers) in 2.9 sec: 11,876 declarations; 61,632 references; 3 unresolved inclusions; 42 syntax errors; 149 unresolved names (0.2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-05-26 14:06:32.300
+!MESSAGE Indexed 'slave_node' (23 sources, 112 headers) in 1.47 sec: 10,223 declarations; 52,395 references; 3 unresolved inclusions; 42 syntax errors; 149 unresolved names (0.24%)
+!SESSION 2025-05-26 14:08:54.772 -----------------------------------------------
+eclipse.buildId=Version 1.18.1
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_NZ
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data file:/C:/Users/mdi51/ME_Thesis/
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-05-26 14:09:10.837
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-05-26 14:09:10.837
+!MESSAGE Log4j2 initialized with config file C:\Users\mdi51\ME_Thesis\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-05-26 14:09:14.715
+!MESSAGE Started RMI Server, listening on port 41338
+!SESSION 2025-05-26 14:12:23.879 -----------------------------------------------
+eclipse.buildId=Version 1.18.1
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_NZ
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-05-26 14:12:33.621
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-05-26 14:12:33.622
+!MESSAGE Log4j2 initialized with config file C:\Users\mdi51\ME_Thesis\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-05-26 14:12:36.328
+!MESSAGE Started RMI Server, listening on port 41338
+
+!ENTRY org.eclipse.ui.ide 4 4 2025-05-26 14:42:25.842
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2025-05-26 14:42:25.842
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-05-26 14:42:25.842
+!MESSAGE The project description file (.project) for 'SEA Testing' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-05-26 14:42:25.842
+!MESSAGE The project description file (.project) for 'master_node' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-05-26 14:42:25.842
+!MESSAGE The project description file (.project) for 'slave_node' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.

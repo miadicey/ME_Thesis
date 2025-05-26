@@ -1,0 +1,31 @@
+#include <stdio.h> // Stdio defines printf command.
+#include <stdint.h> // Standard int will define the datatypes we are using e.g. int32
+#include <stdbool.h> // Standard bool contains nice boolean definitions
+
+struct PolarVec_s {
+    uint32_t radius;
+    float angle;
+};
+
+struct PolarVec_s initPolarVec(uint32_t radius, float angle) 
+{
+    struct PolarVec_s v;
+    v.radius = radius;
+    v.angle = angle;
+    return v;
+};
+
+
+
+void printPolarVec(struct PolarVec_s v) 
+{
+    printf("%d : %.1f\n", v.radius, v.angle);
+};
+
+
+int main(void) 
+{
+    // Write C code here
+    struct PolarVec_s v = initPolarVec(1, 180);
+    printPolarVec(v);
+}

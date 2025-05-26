@@ -1,0 +1,18 @@
+#include <stdio.h> // Stdio defines printf command.
+#include <stdint.h> // Standard int will define the datatypes we are using e.g. int32
+#include <stdbool.h> // Standard bool contains nice boolean definitions
+
+void printSquaredArray(const int32_t array[], size_t n)
+{
+    size_t i;
+
+    for (i=0; i <n; i++) {
+        printf("%d\n", array[i]*array[i]);
+    }
+}
+
+int main(void)
+{
+    const int32_t array[3] = {1, 2, 3};
+    printSquaredArray(array, 3);
+}

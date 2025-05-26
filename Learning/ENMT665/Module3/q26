@@ -1,0 +1,23 @@
+#include <stdio.h> // Stdio defines printf command.
+#include <stdint.h> // Standard int will define the datatypes we are using e.g. int32
+#include <stdbool.h> // Standard bool contains nice boolean definitions
+
+bool isWonRow(char player, const char game[3][3], uint8_t rowNum)
+{
+    bool won = 1;
+    int32_t num=player;
+    for (size_t i=0; i<3; i++) {
+        won = (game[rowNum][i]==num) ? 1 : 0;
+        if (won == 0) {
+            break;
+        }
+    }
+
+    return won;
+}
+
+int main(void)
+{
+    const char game[3][3] = {{'X', 'O', ' '},{' ', ' ', ' '}, {'O', 'O', 'O'}};
+    printf(isWonRow('O', game, 2) ? "true\n" : "false\n"); 
+}

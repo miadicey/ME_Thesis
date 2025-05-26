@@ -1,0 +1,50 @@
+#include <stdio.h> // Stdio defines printf command.
+#include <stdint.h> // Standard int will define the datatypes we are using e.g. int32
+#include <stdbool.h> // Standard bool contains nice boolean definitions
+
+
+
+typedef struct {
+    int32_t x;
+    int32_t y;
+} Vec_t;
+
+typedef struct{
+    Vec_t position;
+    Vec_t velocity;
+} Particle_t;
+
+Vec_t vecSum(Vec_t v1, Vec_t v2)
+{
+    Vec_t result;
+    result.x = v1.x + v2.x;
+    result.y = v1.y + v2.y;
+    return result;
+}
+
+void setVelocity(Particle_t* particle, int32_t vx, int32_t vy)
+{
+    (*particle).velocity.x = vx;
+    (*particle).velocity.y = vy;
+};
+
+void updatePosition(Particle_t* particle)
+{
+    Vec_t result.
+};
+
+
+int main(void) 
+{
+    // Write C code here
+    Particle_t mote = {
+        .x = 0,
+        .y = 1,
+        .vx = 0,
+        .vy = 0
+    };
+    setVelocity(&mote, 3, 4);
+    updatePosition(&mote);
+    printf("v = %d, %d\n", mote.vx, mote.vy);
+    printf("x = %d, y = %d\n", mote.x, mote.y);
+}
